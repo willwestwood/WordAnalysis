@@ -152,5 +152,5 @@ public class Analyzer {
     // allow preceding/trailing chars such as '&', '-', '@', '£', etc
     private static final String prefixSuffixCharsToIgnoreRegex = "[\\(\\)\\[\\]\\{\\}\"`\'?!,.:;/\\\\~_<>^±§*=]";
 
-    private static final String allowedSingleCharsRegex = "[a-zA-Z0-9&+\\-=]";
+    private static final String allowedSingleCharsRegex = "[a-zA-Z0-9&+\\-=/*]";
 }

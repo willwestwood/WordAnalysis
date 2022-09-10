@@ -10,11 +10,11 @@ class Program {
         StringBuilder input = new StringBuilder();
 
         try {
-            Scanner myReader = new Scanner(new File(args[0]));
-            while (myReader.hasNextLine()) {
-                input.append(myReader.nextLine());
+            Scanner reader = new Scanner(new File(args[0]));
+            while (reader.hasNextLine()) {
+                input.append(reader.nextLine());
             }
-            myReader.close();
+            reader.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
